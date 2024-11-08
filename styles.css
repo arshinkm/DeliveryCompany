@@ -1,0 +1,525 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #ff4500;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero .btn-primary {
+    background-color: white;
+    color: #ff4500;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hero .btn-primary:hover {
+    background-color: #ff6a00;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .feature {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .feature h2 {
+    color: #ff4500;
+  }
+  
+  .feature p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .testimonials h2 {
+    color: #ff4500;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .testimonial-card {
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-card p {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card h4 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    color: #ff4500;
+    margin-bottom: 20px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact input, .contact textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact button:hover {
+    background-color: #e43f00;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .feature {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .testimonial-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testimonial-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  /* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #ff4500;
+    border-radius: 5px;
+  }
+/* Floating CTA Button */
+.cta-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff4500;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #e43f00;
+  }
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    margin: 10px 0;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #ff4500;
+  }
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #ff4500;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+  }
+  
+  body.dark-mode .hero {
+    background-color: #444;
+  }
+  
+  body.dark-mode .btn-primary {
+    background-color: black;
+    color: #ff4500;
+  }
+  
+  body.dark-mode .cta-button {
+    background-color: #222;
+  }
+  
+  /* Dark Mode Toggle Button */
+  .dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: #555;
+  }
+/* Newsletter Section */
+.newsletter {
+    background-color: #ff4500;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  .newsletter button {
+    background-color: white;
+    color: #ff4500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .newsletter button:hover {
+    background-color: #ff6a00;
+  }
+  
+  #confirmation-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  .hidden {
+    display: none;
+  }
+/* Newsletter Section */
+.newsletter {
+    background-color: #ff4500;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    width: 100%; /* Full width on small screens */
+    max-width: 300px; /* Limit max width */
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .newsletter button {
+    background-color: white;
+    color: #ff4500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Full width on small screens */
+    max-width: 200px; /* Limit max width */
+  }
+  
+  .newsletter button:hover {
+    background-color: #ff6a00;
+  }
+  
+  #confirmation-message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For screens 768px and smaller (tablets and smaller devices) */
+  @media (max-width: 768px) {
+    .newsletter h2 {
+      font-size: 1.6rem;
+    }
+  
+    .newsletter p {
+      font-size: 1rem;
+    }
+  
+    .newsletter input, .newsletter button {
+      margin-bottom: 15px; /* Add space between input and button */
+      width: 80%; /* Make input and button take up more space */
+    }
+  }
+  
+  /* For screens 480px and smaller (mobile devices) */
+  @media (max-width: 480px) {
+    .newsletter h2 {
+      font-size: 1.4rem;
+    }
+  
+    .newsletter p {
+      font-size: 0.9rem;
+    }
+  
+    .newsletter input, .newsletter button {
+      width: 90%; /* Make input and button take up most of the screen width */
+      margin-bottom: 10px;
+    }
+  
+    .newsletter button {
+      font-size: 1rem; /* Adjust button size */
+    }
+  }
+/* Hero Text */
+.hero h1 {
+    font-size: 6vw; /* Adjusts font size based on viewport width */
+  }
+  
+  /* Buttons */
+  .newsletter button {
+    font-size: 2vw; /* Scale the button font size for small screens */
+  }
+  
+  /* Testimonials */
+  .testimonials h3 {
+    font-size: 4vw;
+  }
+/* Sticky Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: top 0.3s;
+  }
+/* Toast Notification Styles */
+.toast {
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    z-index: 1000;
+    transition: visibility 0.3s, opacity 0.3s;
+  }
+  
+  .toast.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Show toast for 3 seconds */
+  .toast.show {
+    animation: toast-show 3s forwards;
+  }
+  
+  @keyframes toast-show {
+    0% {
+      visibility: visible;
+      opacity: 0;
+    }
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+                    

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Delivery Company</title>
+  <!-- Dark Mode Toggle Button -->
+<button id="dark-mode-toggle" class="dark-mode-toggle">🌙</button>
+
+ <!-- Preloader -->
+<div id="preloader">
+    <div class="spinner"></div>
+  </div>
+  
+  <!-- Navbar -->
+<nav class="navbar">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+<!-- Floating CTA Button -->
+<a href="#contact" class="cta-button">Get in Touch</a>
+
+<!-- Newsletter Signup Section -->
+<section class="newsletter" id="newsletter" data-aos="fade-up">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Get the latest news, updates, and offers straight to your inbox.</p>
+    <form id="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit" class="btn-primary">Subscribe</button>
+    </form>
+    <p id="confirmation-message" class="hidden">Thank you for subscribing!</p>
+  </section>
+  
+  <!-- Toast Notification -->
+<div id="toast" class="toast">Subscription successful!</div>
+
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Link to External CSS File -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="fade-up">
+    <h1>Your Reliable Delivery Partner</h1>
+    <p>Fast, secure, and affordable delivery services right at your doorstep</p>
+    <a href="#contact" class="btn-primary">Get in Touch</a>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature" data-aos="fade-up">
+      <h2>Fast Delivery</h2>
+      <p>We ensure that your packages reach their destination quickly and safely.</p>
+    </div>
+    <div class="feature" data-aos="fade-up" data-aos-delay="200">
+      <h2>24/7 Support</h2>
+      <p>Our customer support is available around the clock to assist you.</p>
+    </div>
+    <div class="feature" data-aos="fade-up" data-aos-delay="400">
+      <h2>Track Your Order</h2>
+      <p>Real-time tracking ensures you always know where your package is.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <h2 data-aos="zoom-in">What Our Clients Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card" data-aos="fade-up">
+        <p>"The fastest delivery service I've ever used! Highly recommend!"</p>
+        <h4>- John Doe</h4>
+      </div>
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+        <p>"Excellent customer support and seamless tracking system!"</p>
+        <h4>- Jane Smith</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Fill out the form below and we'll get back to you.</p>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+<footer>
+    <div class="footer-content">
+      <p>&copy; 2024 Delivery Company. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="#" class="social-icon">Facebook</a>
+        <a href="#" class="social-icon">Twitter</a>
+        <a href="#" class="social-icon">Instagram</a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
